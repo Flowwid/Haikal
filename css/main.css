@@ -12,11 +12,12 @@ body {
   background-color: #222222;
   color: #ece6e6;
   overflow-x: hidden;
+  font-family: "Montserrat";
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url(/fonts/Montserrat-Regular.otf);
+  src: url(../fonts/Montserrat-Regular.otf);
 }
 .wrapper {
   max-width: 1366px;
@@ -59,7 +60,8 @@ main .top {
 main .top h1 {
   font-size: 75px;
 }
-main .top h1, main .top p {
+main .top h1,
+main .top p {
   width: 100%;
   padding: 2em 1em;
   margin-top: 0.5em;
@@ -86,25 +88,58 @@ main .top .arrow {
   transform: scale(0.1);
   cursor: pointer;
 }
+main section {
+  display: flex;
+  flex-direction: column;
+}
+main section * {
+  min-width: 0;
+  min-height: 0;
+}
 main .card {
-  position: relative;
+  width: 100%;
+  text-align: center;
+}
+main .card:nth-child(even) a {
+  flex-direction: row-reverse;
 }
 main .card a {
   text-decoration: none;
   color: #ece6e6;
   margin-bottom: 10px;
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  max-height: 35em;
+  width: 100%;
 }
-main .card :nth-of-type(even) a {
-  flex-direction: row-reverse;
+main .card a .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
 }
-main .card .square:hover, main .card .square-right:hover {
+main .card a > * {
+  flex: 1;
+  width: 100%;
+  transition: all 500ms ease;
+}
+main .card a > *:last-child {
+  position: relative;
+  display: block;
+  flex: 2;
+}
+main .card a > * h2 {
+  font-size: 35px;
+}
+main .card a > * p {
+  opacity: 0.6;
+}
+main .card a:hover .square {
   color: #444343;
   background-color: #ece6e6;
-}
-main .card h2, main .card p {
-  padding: 3em 1em;
-  font-size: 20px;
 }
 
 footer {
