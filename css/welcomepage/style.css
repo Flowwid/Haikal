@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Boarding\ PersonalUse.ttf);
+}
+body {
+  background-color: #222222;
+  color: #ece6e6;
+  overflow-x: hidden;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
