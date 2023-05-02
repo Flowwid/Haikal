@@ -1,0 +1,2 @@
+# redirect netlify to html folder
+/   /html   200

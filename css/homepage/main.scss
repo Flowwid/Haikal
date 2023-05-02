@@ -84,7 +84,26 @@ main {
 
     .geo{
       font-family:'Times New Roman', Times, serif;
+
+        .one:hover{
+          background-color: #EB6440;
+          transition: 300ms;
+        }
+        .two:hover{
+          background-color: #159895;
+          transition: 300ms;
+        }
+        .three:hover{
+          background-color: #0096FF;
+          transition: 300ms;
+        }
+        .four:hover{
+          background-color: #57CC99;
+          transition: 300ms;
+        }
+        
     }
+
 
     h1, p {
       width: 100%;
@@ -97,8 +116,8 @@ main {
     }
 
     p {
-      margin-top: -7em;
-      font-size: 25px;
+      margin-top: -8em;
+      font-size: 20px;
     }
 
     .background {
@@ -175,6 +194,7 @@ main {
     a {
       text-decoration: none;
       color: #ece6e6;
+      margin-top: 10px;
       margin-bottom: 10px;
       display: flex;
       flex-flow: row nowrap;

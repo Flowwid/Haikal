@@ -74,6 +74,22 @@ main .top {
 main .top .geo {
   font-family: "Times New Roman", Times, serif;
 }
+main .top .geo .one:hover {
+  background-color: #EB6440;
+  transition: 300ms;
+}
+main .top .geo .two:hover {
+  background-color: #159895;
+  transition: 300ms;
+}
+main .top .geo .three:hover {
+  background-color: #0096FF;
+  transition: 300ms;
+}
+main .top .geo .four:hover {
+  background-color: #57CC99;
+  transition: 300ms;
+}
 main .top h1, main .top p {
   width: 100%;
   padding: 2em 0em;
@@ -83,8 +99,8 @@ main .top h1 {
   font-size: 75px;
 }
 main .top p {
-  margin-top: -7em;
-  font-size: 25px;
+  margin-top: -8em;
+  font-size: 20px;
 }
 main .top .background {
   position: absolute;
@@ -134,6 +150,7 @@ main .card:nth-child(even) a {
 main .card a {
   text-decoration: none;
   color: #ece6e6;
+  margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
   flex-flow: row nowrap;
