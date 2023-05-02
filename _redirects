@@ -1,2 +1,2 @@
 # redirect netlify to html folder
-/   /html   200
+/*   /html/:splat   200
