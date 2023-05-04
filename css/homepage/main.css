@@ -74,20 +74,8 @@ main .top {
 main .top .geo {
   font-family: "Times New Roman", Times, serif;
 }
-main .top .geo .one:hover {
-  background-color: #EB6440;
-  transition: 300ms;
-}
-main .top .geo .two:hover {
-  background-color: #159895;
-  transition: 300ms;
-}
-main .top .geo .three:hover {
-  background-color: #0096FF;
-  transition: 300ms;
-}
-main .top .geo .four:hover {
-  background-color: #57CC99;
+main .top .geo .ita:hover {
+  font-style: italic;
   transition: 300ms;
 }
 main .top h1, main .top p {
