@@ -34,7 +34,6 @@ body::-webkit-scrollbar-thumb {
   
 }
 
-
 .wrapper {
   max-width: 1366px;
   margin: 0 auto;
@@ -52,6 +51,10 @@ header {
     opacity: 0.5;
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .burger{
+    display: none;
   }
 
   a {
@@ -255,6 +258,105 @@ footer {
     position: fixed;
     bottom: 4vmax;
     right: 5vmax;
+  }
+}
+
+@media only screen and (max-width: 390px){
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    overflow:unset;
+  }
+
+  header > .links, #tab1, #tab2{
+    display: none;
+  }
+
+  header{
+
+    .name{
+      text-align: center;
+    }
+
+    .burger{
+      width: 1.9em;
+      height: auto;
+      display: block;
+    }
+  }
+
+  main{
+
+    .top{
+      h1{
+        font-size: 2.5em;
+      }
+      p{
+        font-size: 13px;
+        padding-bottom: 3.5em;
+      }
+
+      h1, p{
+        padding-top: 6em;
+        z-index: 5;
+      }
+
+      .link > a{
+        
+      }
+
+      .background{
+        position: absolute;
+        height: 40em;
+      }
+
+      .arrow{
+        width: 30em;
+        height: auto;
+      }
+    }
+
+    section{
+
+      .card{
+
+        .square{
+          color: #ece6e6;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          background-color: #444343;
+          padding: 1em 13em;
+          transition: 450ms;
+
+            p{
+              max-width: 100em;
+            }
+        }
+
+        img{
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  footer{
+    a{
+      display: none;
+    }
+
+    p{
+      margin-top: -7.3em;
+      max-width: 50em;
+      font-size: 18px;
+    }
   }
 }
 

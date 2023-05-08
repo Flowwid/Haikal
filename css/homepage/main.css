@@ -49,6 +49,9 @@ header #tab1 {
   padding-right: 10px;
   padding-left: 10px;
 }
+header .burger {
+  display: none;
+}
 header a {
   text-decoration: none;
   color: #ece6e6;
@@ -202,4 +205,69 @@ footer p span:hover {
   position: fixed;
   bottom: 4vmax;
   right: 5vmax;
+}
+
+@media only screen and (max-width: 390px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    overflow: unset;
+  }
+  header > .links, #tab1, #tab2 {
+    display: none;
+  }
+  header .name {
+    text-align: center;
+  }
+  header .burger {
+    width: 1.9em;
+    height: auto;
+    display: block;
+  }
+  main .top h1 {
+    font-size: 2.5em;
+  }
+  main .top p {
+    font-size: 13px;
+    padding-bottom: 3.5em;
+  }
+  main .top h1, main .top p {
+    padding-top: 6em;
+    z-index: 5;
+  }
+  main .top .background {
+    position: absolute;
+    height: 40em;
+  }
+  main .top .arrow {
+    width: 30em;
+    height: auto;
+  }
+  main section .card .square {
+    color: #ece6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #444343;
+    padding: 1em 13em;
+    transition: 450ms;
+  }
+  main section .card .square p {
+    max-width: 100em;
+  }
+  main section .card img {
+    position: absolute;
+  }
+  footer a {
+    display: none;
+  }
+  footer p {
+    margin-top: -7.3em;
+    max-width: 50em;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */
