@@ -16,8 +16,8 @@ body {
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url(../fonts/Boarding\ PersonalUse.ttf);
+  font-family: "Spring";
+  src: url(../../fonts/Fontspring-DEMO-theseasons-bd.otf);
 }
 body::-webkit-scrollbar {
   width: 1em;
@@ -75,22 +75,22 @@ main .top {
   margin: -7.55em;
 }
 main .top .geo {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Spring";
 }
-main .top .geo .ita:hover {
+main .top .ita:hover {
   font-style: italic;
   transition: 300ms;
 }
 main .top h1, main .top p {
   width: 100%;
-  padding: 2em 0em;
+  padding: 2.4em 0em;
   margin-top: 0.5em;
 }
 main .top h1 {
   font-size: 75px;
 }
 main .top p {
-  margin-top: -8em;
+  margin-top: -9.7em;
   font-size: 20px;
 }
 main .top .background {
@@ -115,6 +115,7 @@ main .top .arrow {
 main section {
   display: flex;
   flex-direction: column;
+  margin-top: -11.1em;
 }
 main section * {
   min-width: 0;
@@ -207,20 +208,26 @@ footer p span:hover {
   right: 5vmax;
 }
 
-@media only screen and (max-width: 390px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+@media only screen and (max-width: 412px) {
   body {
     overflow: unset;
+    margin: 0 auto; /* center the content horizontally */
+    max-width: 100%; /* prevent horizontal scrolling */
+    overflow-x: hidden;
   }
   header > .links, #tab1, #tab2 {
     display: none;
   }
-  header .name {
+  header {
+    margin-bottom: 25px;
+    margin-top: 25px;
     text-align: center;
+  }
+  header .name {
+    font-family: "";
+    text-align: center;
+    font-size: 25px;
+    margin-right: -1.5em;
   }
   header .burger {
     width: 1.9em;
@@ -228,45 +235,62 @@ footer p span:hover {
     display: block;
   }
   main .top h1 {
-    font-size: 2.5em;
+    font-size: 37px;
   }
   main .top p {
-    font-size: 13px;
-    padding-bottom: 3.5em;
+    font-size: 11.5px;
+    padding-bottom: 3.2em;
   }
   main .top h1, main .top p {
-    padding-top: 6em;
+    padding-top: 4em;
     z-index: 5;
   }
   main .top .background {
     position: absolute;
-    height: 40em;
+    height: 27em;
+    width: 22em;
+    margin: 0em -11em;
   }
   main .top .arrow {
-    width: 30em;
+    width: 27em;
     height: auto;
+    margin-top: -9.5em;
+  }
+  main section {
+    gap: 5em;
+    margin-top: -21em;
+  }
+  main section .card {
+    position: relative;
+    margin: 10em 0em;
   }
   main section .card .square {
     color: #ece6e6;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-color: #444343;
-    padding: 1em 13em;
     transition: 450ms;
+    position: absolute;
+    margin: 6em 0em;
+  }
+  main section .card .square h2 {
+    font-size: 23px;
   }
   main section .card .square p {
-    max-width: 100em;
+    max-width: 40em;
   }
   main section .card img {
+    width: 100%;
+    height: auto;
     position: absolute;
+  }
+  .scroll {
+    display: none;
   }
   footer a {
     display: none;
   }
   footer p {
-    margin-top: -7.3em;
+    margin: 2em 0em;
     max-width: 50em;
     font-size: 18px;
   }

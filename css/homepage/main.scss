@@ -17,8 +17,8 @@ body {
 
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url(../fonts/Boarding\ PersonalUse.ttf);
+  font-family: 'Spring';
+  src: url(../../fonts/Fontspring-DEMO-theseasons-bd.otf);
 }
 
 body::-webkit-scrollbar {
@@ -86,19 +86,18 @@ main {
     margin: -7.55em;
 
     .geo{
-      font-family:'Times New Roman', Times, serif;
+      font-family:'Spring';
+    }
 
-        .ita:hover{
-          font-style: italic;
-          transition: 300ms;
-        }
-        
+    .ita:hover{
+      font-style: italic;
+      transition: 300ms;
     }
 
 
     h1, p {
       width: 100%;
-      padding: 2em 0em;
+      padding: 2.4em 0em;
       margin-top: 0.5em;
     }
     
@@ -107,7 +106,7 @@ main {
     }
 
     p {
-      margin-top: -8em;
+      margin-top: -9.7em;
       font-size: 20px;
     }
 
@@ -137,25 +136,13 @@ main {
   section {
     display: flex;
     flex-direction: column;
+    margin-top: -11.1em;
 
     * {
       min-width: 0;
       min-height: 0;
     }
   }
-
-  // .card {
-  //   opacity: 0;
-  //   transition: opacity 0.5s ease-in-out;
-  // }
-  
-  // .card.fade-in {
-  //   opacity: 1;
-  // }
-  
-  // .card.fade-out {
-  //   opacity: 0;
-  // }
 
   .card:hover{
     img {
@@ -181,7 +168,6 @@ main {
       flex-direction: row-reverse;
     }
   
-
     a {
       text-decoration: none;
       color: #ece6e6;
@@ -261,16 +247,12 @@ footer {
   }
 }
 
-@media only screen and (max-width: 390px){
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
+@media only screen and (max-width: 412px){
   body{
     overflow:unset;
+    margin: 0 auto; /* center the content horizontally */
+    max-width: 100%; /* prevent horizontal scrolling */
+    overflow-x: hidden;
   }
 
   header > .links, #tab1, #tab2{
@@ -278,31 +260,39 @@ footer {
   }
 
   header{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
 
     .name{
+      font-family: '';
       text-align: center;
+      font-size: 25px;
+      margin-right: -1.5em;
     }
 
     .burger{
       width: 1.9em;
       height: auto;
       display: block;
+
     }
   }
 
   main{
-
+    
     .top{
       h1{
-        font-size: 2.5em;
+        font-size: 37px;
+
       }
       p{
-        font-size: 13px;
-        padding-bottom: 3.5em;
+        font-size: 11.5px;
+        padding-bottom: 3.2em;
       }
 
       h1, p{
-        padding-top: 6em;
+        padding-top: 4em;
         z-index: 5;
       }
 
@@ -312,39 +302,56 @@ footer {
 
       .background{
         position: absolute;
-        height: 40em;
+        height: 27em;
+        width:22em;
+        margin: 0em -11em;
+        
       }
 
       .arrow{
-        width: 30em;
+        width: 27em;
         height: auto;
+        margin-top: -9.5em;
       }
     }
 
     section{
-
+      gap: 5em;
+      margin-top: -21em;
+    
       .card{
+        position: relative;
+        margin: 10em 0em;
 
         .square{
           color: #ece6e6;
-          display: flex;
           align-items: center;
-          justify-content: center;
-          flex-direction: column;
           background-color: #444343;
-          padding: 1em 13em;
           transition: 450ms;
+          position: absolute;
+          margin: 6em 0em;
+
+          h2{
+            font-size: 23px;
+          }
 
             p{
-              max-width: 100em;
+              max-width : 40em ;
             }
         }
 
         img{
+          width: 100%; 
+          height: auto; 
           position: absolute;
+
         }
       }
     }
+  }
+
+  .scroll{
+    display: none;
   }
 
   footer{
@@ -353,7 +360,7 @@ footer {
     }
 
     p{
-      margin-top: -7.3em;
+      margin: 2em 0em;
       max-width: 50em;
       font-size: 18px;
     }
