@@ -175,6 +175,7 @@ main .card a > * h2 {
 }
 main .card a > * p {
   opacity: 0.6;
+  line-height: 2;
 }
 
 footer {
