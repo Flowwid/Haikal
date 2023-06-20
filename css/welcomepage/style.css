@@ -13,9 +13,102 @@ html {
   src: url(../fonts/Boarding\ PersonalUse.ttf);
 }
 body {
-  background-color: #222222;
+  background-color: #343434;
   color: #ece6e6;
-  overflow-x: hidden;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Montserrat", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   overflow: hidden;
+  padding-top: 3em;
+}
+body .wrapper {
+  max-width: 1466px;
+  margin: 0 auto;
+  background-color: #212121;
+  padding-bottom: 5em;
+}
+body .wrapper header {
+  display: flex;
+  margin-top: 2.5em;
+  margin-bottom: 4em;
+  align-items: center;
+  padding: 3em 6em;
+  gap: 1em;
+}
+body .wrapper header .icon {
+  width: auto;
+  height: 30px;
+  margin-bottom: -5px;
+}
+body .wrapper header .circle {
+  position: absolute;
+  margin: -2em -64.8px;
+}
+body .wrapper header nav a {
+  text-decoration: none;
+  color: #ece6e6;
+}
+body .wrapper main {
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+body .wrapper main p {
+  position: absolute;
+  background-color: #212121;
+  padding: 1.5em;
+  margin: 1px 40em;
+  font-size: 1.1em;
+}
+body .wrapper main p .ita {
+  font-weight: 200;
+}
+body .wrapper main p .times:hover {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+}
+body .wrapper main img {
+  z-index: 5;
+}
+body .wrapper main h1 {
+  position: absolute;
+  text-align: left;
+  font-size: 3em;
+  margin: -9em 2em;
+}
+body .wrapper main h1 .black {
+  color: #212121;
+}
+body .wrapper main h2 {
+  text-align: left;
+  font-weight: 400;
+  margin: 10em;
+  position: absolute;
+  max-width: 21em;
+  margin: -15.5em 60em;
+  float: left;
+  font-size: 1em;
+}
+body .wrapper main .arrow {
+  position: absolute;
+  margin: 27em -43em;
+}
+body .wrapper main a:hover {
+  scale: 1;
+  color: #ece6e6;
+  background-color: #212121;
+  font-style: italic;
+  font-weight: 650;
+}
+body .wrapper main a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #212121;
+  background-color: #ece6e6;
+  margin: 2em 34.2em;
+  padding: 1em;
+  font-weight: 450;
+  transition: 450ms;
+}
+body .wrapper main a .test {
+  font-size: 100em;
 }/*# sourceMappingURL=style.css.map */
