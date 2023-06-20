@@ -9,6 +9,10 @@ html {
 }
 
 @font-face {
+  font-family: "Spring";
+  src: url(../../fonts/Fontspring-DEMO-theseasons-bd.otf);
+}
+@font-face {
   font-family: "Montserrat";
   src: url(../fonts/Boarding\ PersonalUse.ttf);
 }
@@ -72,7 +76,9 @@ body .wrapper main h1 {
   position: absolute;
   text-align: left;
   font-size: 3em;
-  margin: -9em 2em;
+  margin: -9em 2.1em;
+  font-family: "Spring";
+  letter-spacing: 4px;
 }
 body .wrapper main h1 .black {
   color: #212121;
