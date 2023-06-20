@@ -25,7 +25,7 @@ body {
     overflow: hidden; 
     padding-top: 3em;
     .wrapper{
-        max-width: 1466px;
+        max-width: 1366px;
         margin: 0 auto;
         background-color: #212121;
         padding-bottom:5em ;
@@ -65,7 +65,7 @@ body {
                     background-color:#212121 ;
                     padding: 1.5em;
                     margin: 1px 40em; 
-                    font-size: 1.1em;  
+                    font-size: 1em;  
                     .ita{
                         font-weight: 200;
                     }
@@ -82,7 +82,8 @@ body {
                     position: absolute;
                     text-align: left;
                     font-size: 3em;
-                    margin: -9em 2.1em;
+                    margin: -9em 1em;
+                    border-radius: 100px;
                     font-family: 'Spring';
                     letter-spacing: 4px;
                     .black{
@@ -95,8 +96,7 @@ body {
                     margin: 10em;
                     position: absolute;
                     max-width: 21em; 
-                    margin: -15.5em 60em;
-                    float: left;  
+                    margin: -15.2em 55em; 
                     font-size: 1em;
                 }
 
