@@ -15,7 +15,6 @@ body {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
-
 @font-face {
   font-family: 'Spring';
   src: url(../../fonts/Fontspring-DEMO-theseasons-bd.otf);
@@ -32,6 +31,8 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #444343;
 }
+
+
 
 .wrapper {
   max-width: 1366px;

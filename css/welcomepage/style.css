@@ -12,10 +12,6 @@ html {
   font-family: "Spring";
   src: url(../../fonts/Fontspring-DEMO-theseasons-bd.otf);
 }
-@font-face {
-  font-family: "Montserrat";
-  src: url(../fonts/Boarding\ PersonalUse.ttf);
-}
 body::-webkit-scrollbar {
   width: 1em;
 }
@@ -28,14 +24,20 @@ body::-webkit-scrollbar-thumb {
   background-color: #444343;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: #343434;
   color: #ece6e6;
-  font-family: "Montserrat", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   padding-top: 3em;
 }
 body .wrapper {
   max-width: 1366px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0 auto;
   background-color: #212121;
   padding-bottom: 5em;
@@ -128,7 +130,7 @@ body .wrapper main a .test {
   font-size: 100em;
 }
 body .wrapper main section {
-  margin-top: 13em;
+  margin-top: 12em;
 }
 body .wrapper main section .block {
   top: 48em;
@@ -137,12 +139,13 @@ body .wrapper main section .block {
   height: 5px;
   background-color: #343434;
   margin: auto;
-  width: 74.9em;
+  width: 71.6em;
   border-radius: 5px;
 }
 body .wrapper main section .man {
   position: relative;
   right: 14em;
+  z-index: 1;
 }
 body .wrapper main section .sec2 {
   position: relative;
@@ -153,6 +156,7 @@ body .wrapper main section .sec2 {
 }
 body .wrapper main section .desert {
   position: absolute;
-  left: 57em;
-  top: 55.6em;
+  max-width: 100%;
+  height: auto;
+  margin: -26.4em 11em;
 }/*# sourceMappingURL=style.css.map */
