@@ -75,9 +75,10 @@ body .wrapper main .name {
   right: 27em;
   padding: 1.5em;
   top: -10px;
+  letter-spacing: 1px;
 }
-body .wrapper main .name .ita {
-  font-weight: 200;
+body .wrapper main .name .times {
+  font-weight: 1000;
 }
 body .wrapper main .name .times:hover {
   font-family: "Times New Roman", Times, serif;
@@ -103,6 +104,15 @@ body .wrapper main h2 {
   right: 9em;
   top: 510px;
   font-size: 1em;
+}
+body .wrapper main h2 .big {
+  font-style: italic;
+}
+body .wrapper main .blacc {
+  position: absolute;
+  color: #212121;
+  left: 10.75em;
+  top: 5.2em;
 }
 body .wrapper main .arrow {
   position: absolute;
@@ -158,5 +168,5 @@ body .wrapper main section .desert {
   position: absolute;
   max-width: 100%;
   height: auto;
-  margin: -26.4em 11em;
+  margin: -22.8em 11em;
 }/*# sourceMappingURL=style.css.map */
